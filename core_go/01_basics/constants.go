@@ -17,4 +17,5 @@ func TestConstants(t *testing.T) {
 	fmt.Println("GOLDEN:", GOLDEN)
 	fmt.Println("MAX_SIZE:", MAX_SIZE)
 	t.Logf("Constants: PI=%v, E=%v, GOLDEN=%v, MAX_SIZE=%v", PI, E, GOLDEN, MAX_SIZE)
+	t.Log("Constants test completed successfully.")
 }		
