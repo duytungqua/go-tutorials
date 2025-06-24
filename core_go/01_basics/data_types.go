@@ -21,3 +21,4 @@ func dataTypes() {
 	fmt.Println("Person:", person)
 	fmt.Println("Person Name:", person.Name)
 }
+
