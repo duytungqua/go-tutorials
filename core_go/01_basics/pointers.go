@@ -26,5 +26,9 @@ func pointers() {
 	fmt.Printf("Pointer address: %p\n", ptr) // Print the address stored in the
 	fmt.Printf("Pointer value: %d\n", *ptr) // Dereference the pointer to get the value
 
+	// Dereferencing the pointer to modify the value, that the pointer points to
 
+	*ptr = 20
+	fmt.Printf("Modified value: %d\n", value) // Print the modified value
 }
+
