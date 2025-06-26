@@ -22,7 +22,6 @@ func pointers() {
 	var value int = 10
 	ptr = &value
 
-	fmt.Printf("value", value)
 	fmt.Printf("Pointer address: %p\n", ptr) // Print the address stored in the
 	fmt.Printf("Pointer value: %d\n", *ptr) // Dereference the pointer to get the value
 
