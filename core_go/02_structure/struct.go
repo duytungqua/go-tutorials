@@ -22,3 +22,11 @@ type Person struct {
 func (p Person) String() string {
 	return fmt.Sprintf("Name: %s, Age: %d", p.name, p.age)
 }
+
+// NewPerson creates a new Person instance
+func NewPerson(name string, age int) Person {
+	return Person{
+		name: name,
+		age:  age,
+	}
+}
