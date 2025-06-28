@@ -30,3 +30,24 @@ func NewPerson(name string, age int) Person {
 		age:  age,
 	}
 }
+
+//create instance of Person
+func CreatePerson() {
+	person := Person{
+		name: "Alice",
+		age:  30,
+	}
+
+	fmt.Println(person.String()) // Accessing the String method
+	person.age = 35              // Modifying the age field
+	fmt.Println(person.String()) // Accessing the String method again	
+}
+
+//exported and unexported fields
+type PersonWithFields struct {
+	Name string // Exported field (accessible outside the package)
+	age  int    // Unexported field (not accessible outside the package)
+}
+func (p PersonWithFields) GetAge() int {
+	return p.age // Accessing the unexported field through a method
+}	
