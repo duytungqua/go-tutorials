@@ -51,3 +51,15 @@ type PersonWithFields struct {
 func (p PersonWithFields) GetAge() int {
 	return p.age // Accessing the unexported field through a method
 }	
+
+//go constructors
+func NewPersonWithFields(name string, age int) PersonWithFields {
+	return PersonWithFields{
+		Name: name,
+		age:  age,
+	}
+}
+//methods with value and pointer receivers
+func (p PersonWithFields) ValueReceiverMethod() {
+	fmt.Println("Value receiver method called")
+}	
