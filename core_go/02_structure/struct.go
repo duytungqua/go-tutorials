@@ -63,3 +63,6 @@ func NewPersonWithFields(name string, age int) PersonWithFields {
 func (p PersonWithFields) ValueReceiverMethod() {
 	fmt.Println("Value receiver method called")
 }	
+func (p *PersonWithFields) PointerReceiverMethod() {
+	fmt.Println("Pointer receiver method called")
+}
