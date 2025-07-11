@@ -12,8 +12,12 @@ Key featueres of interfaces:
 type Greeter interface{
 	greeter();
 }
+//how to implement interface
+type People struct {
+	Name string
+	Age  int
+}		
 
-
-var anyValue interface{}
-anyValue = 42
-anyValue = "Hello"
+func (p People) Greet() string { // Value receiver
+	return "Hello, " + p.Name
+}
