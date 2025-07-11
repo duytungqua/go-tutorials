@@ -12,3 +12,8 @@ Key featueres of interfaces:
 type Greeter interface{
 	greeter();
 }
+
+
+var anyValue interface{}
+anyValue = 42
+anyValue = "Hello"
