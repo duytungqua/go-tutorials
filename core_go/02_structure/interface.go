@@ -21,3 +21,12 @@ type People struct {
 func (p People) Greet() string { // Value receiver
 	return "Hello, " + p.Name
 }
+
+//value receiver vs pointer receiver
+func (p People) GreetPointer() string { // Pointer receiver
+	return "Hello, " + p.Name
+}	
+
+func (p *People) UpdateName(newName string) {
+	p.Name = newName
+}	
