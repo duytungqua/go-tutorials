@@ -26,3 +26,8 @@ func NewPerson(name string, age int, city string, state string) Person {
 		},
 	}
 }
+
+// String method for Person to display information
+func (p Person) String() string {
+	return fmt.Sprintf("Name: %s, Age: %d, City: %s, State: %s", p.Name, p.Age, p.City, p.State)
+}
