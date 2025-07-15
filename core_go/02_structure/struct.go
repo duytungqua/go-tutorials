@@ -10,14 +10,3 @@ type Persons struct {
 }
 
 
-// NewPerson creates a new Person instance with embedded Address
-func NewPerson(name string, age int, city string, state string) Person {
-	return Persons{
-		Name: name,
-		Age:  age,
-		Address: Address{
-			City:  city,
-			State: state,
-		},
-	}
-}
