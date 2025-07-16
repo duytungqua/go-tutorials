@@ -6,7 +6,7 @@ import "fmt"
 type Persons struct {
 	Name    string
 	Age     int
-	Address // Embedded struct
+	Addres // Embedded struct
 }
 
 // Address struct
@@ -20,10 +20,15 @@ func NewPersons(name string, age int, city string, state string) Persons {
 	return Persons{
 		Name: name,
 		Age:  age,
-		Address: Addres{
+		Addres: Addres{
 			City:  city,
 			State: state,
 		},
 	}
+}
+
+func main() {
+	person := NewPersons("Alice", 30, "New York", "NY")
+	fmt.Println(person) // Output: Name: Alice, Age: 30, City: New York, State: NY
 }
 
