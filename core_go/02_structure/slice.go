@@ -12,6 +12,7 @@ func slice(){
 	fmt.Println(slice) // Output: [2 3 4]
 
 	//make slice
-	slicem := make([]int, 3, 5)
-	
+	slices := make([]int, 3, 5)
+	fmt.Println(slices)        // Output: [0 0 0]
+
 }
