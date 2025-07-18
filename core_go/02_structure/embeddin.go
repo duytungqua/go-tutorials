@@ -4,7 +4,7 @@ package structure
 import "fmt"
 
 // Person struct with embedded Address struct
-type Person struct {
+type Personss struct {
 	Name    string
 	Age     int
 	Address // Embedded struct
@@ -16,8 +16,8 @@ type Address struct {
 	State string
 }
 // NewPerson creates a new Person instance with embedded Address
-func NewPerson(name string, age int, city string, state string) Person {		
-	return Person{
+func NewPers(name string, age int, city string, state string) Personss {		
+	return Personss{
 		Name: name,
 		Age:  age,
 		Address: Address{
@@ -27,7 +27,11 @@ func NewPerson(name string, age int, city string, state string) Person {
 	}
 }
 
-// String method for Person to display information
-func (p Person) String() string {
-	return fmt.Sprintf("Name: %s, Age: %d, City: %s, State: %s", p.Name, p.Age, p.City, p.State)
+func funcs() {
+	person := NewPers("Alice", 30, "New York", "NY")
+	fmt.Println(person) // Output: {Alice 30 {New York NY}}
+	
+	// Accessing embedded struct fields
+	fmt.Println("City:", person.City)   // Output: City: New York
+	fmt.Println("State:", person.State) // Output: State: NY
 }

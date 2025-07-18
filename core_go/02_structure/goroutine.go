@@ -10,14 +10,17 @@ import "fmt"
 	2. Concurrent: They can run concurrently, making it easy to write programs
 	3. Start with the `go` keyword followed by a function call.
 */
+func printNumbers() {
+    for i := 1; i <= 5; i++ {
+        fmt.Println(i)
+    }
+}
 
 func routine(){
 	fmt.Println("Main function is running...")
 
 	for i := 1; i <= 5; i++ {
-		go func(n int) {
-			fmt.Println(n)
-		}(i)
+		go printNumbers()
 	}
 
 	fmt.Println("Main function finished.")
