@@ -15,4 +15,8 @@ func slice(){
 	slices := make([]int, 3, 5)
 	fmt.Println(slices)        // Output: [0 0 0]
 
+	// Append to slice
+	slice = append(slice, 6, 7)
+	fmt.Println(slice) // Output: [2 3 4 6 7]
+	
 }
