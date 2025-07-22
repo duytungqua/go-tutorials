@@ -26,9 +26,3 @@ func NewPersons(name string, age int, city string, state string) Persons {
 		},
 	}
 }
-
-func main() {
-	person := NewPersons("Alice", 30, "New York", "NY")
-	fmt.Println(person) // Output: Name: Alice, Age: 30, City: New York, State: NY
-}
-
