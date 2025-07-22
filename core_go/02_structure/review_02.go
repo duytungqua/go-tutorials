@@ -30,3 +30,10 @@ func (d Department) GetEmployeeName() string {
 	return d.Employee.Name
 }
 
+func declarePointer(){
+	var pointer *int
+	var value int = 42
+	pointer = &value // Should be assign address of a variable, not a value
+	fmt.Printf("Pointer address: %p\n", pointer) // Print the address stored in the pointer
+	
+}
