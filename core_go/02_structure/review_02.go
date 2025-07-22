@@ -42,10 +42,9 @@ func sliceExample(){
 	arr := []int{1,2,3,4,5}
 	slice := make([]int, 3, 5)
 
-	slice = append(slice, 6, 7)
+	copy(slice, arr[:5])
 	fmt.Println("Slice after append:", slice)
-	newSlice := slice[1:4]
-	fmt.Println("New slice:", newSlice) // Output: [2 3 4]
+
 }
 
 
