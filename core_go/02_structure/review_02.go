@@ -1,4 +1,4 @@
-package main
+package structure
 
 import "fmt"
 
@@ -38,7 +38,7 @@ func declarePointer(){
 
 }
 
-func sliceExample(){
+func SliceExample(){
 	arr := []int{1,2,3,4,5}
 	slice := make([]int, 3, 5)
 
@@ -48,6 +48,3 @@ func sliceExample(){
 }
 
 
-func main(){
-	sliceExample()
-}

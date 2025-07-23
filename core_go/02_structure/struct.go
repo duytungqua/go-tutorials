@@ -1,6 +1,5 @@
 package structure
 
-import "fmt"
 
 // Person struct with embedded Address struct
 type Persons struct {

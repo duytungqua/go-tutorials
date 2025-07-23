@@ -1,5 +1,4 @@
 package structure
-
 //embeddin.go
 import "fmt"
 
