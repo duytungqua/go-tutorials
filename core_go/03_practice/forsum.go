@@ -17,4 +17,13 @@ func Sum() {
 	// Length and capacity of the slice
 	fmt.Println("Length of slice:", len(slice))
 	fmt.Println("Capacity of slice:", cap(slice))
+
+	// Iterate over the slice using a for loop
+	for i := 0; i < len(slice); i++ {
+		fmt.Printf("Element at index %d: %d\n", i, slice[i])
+	}
+	// Iterate over the slice using a range loop
+	for index, value := range slice {
+		fmt.Printf("Index: %d, Value: %d\n", index, value)
+	}
 }
