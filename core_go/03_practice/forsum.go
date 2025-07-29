@@ -26,4 +26,13 @@ func Sum() {
 	for index, value := range slice {
 		fmt.Printf("Index: %d, Value: %d\n", index, value)
 	}
+	// Check if the slice is empty
+	if len(slice) == 0 {
+		fmt.Println("The slice is empty.")
+	} else {
+		fmt.Println("The slice is not empty.")
+	}
+	// Check if the slice contains a specific value
+	valueToFind := 3
+
 }
