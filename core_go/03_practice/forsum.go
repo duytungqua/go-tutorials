@@ -32,7 +32,6 @@ func Sum() {
 	} else {
 		fmt.Println("The slice is not empty.")
 	}
-	// Check if the slice contains a specific value
-	valueToFind := 3
+	
 
 }
