@@ -28,5 +28,12 @@ func F4Sum() {
 		}
 		numMap[num] = true
 	}
-
+	//use nested loops to find the pairs
+	for i := 0; i < len(arr); i++ {
+		for j := i + 1; j < len(arr); j++ {
+			if arr[i]+arr[j] == target {
+				fmt.Printf("Found a pair using nested loops: %d + %d = %d\n", arr[i], arr[j], target)
+			}
+		}
+	}
 }
