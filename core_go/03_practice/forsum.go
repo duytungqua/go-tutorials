@@ -19,5 +19,14 @@ func F4Sum() {
 			j--
 		}
 	}
+	//use map to store the elements
+	numMap := make(map[int]bool)
+	for _, num := range arr {
+		complement := target - num
+		if _, found := numMap[complement]; found {
+			fmt.Printf("Found a pair using map: %d + %d = %d\n", num, complement, target)
+		}
+		numMap[num] = true
+	}
 
 }
